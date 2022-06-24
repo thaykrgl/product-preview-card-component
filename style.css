@@ -10,16 +10,6 @@ body {
   background: hsl(30, 38%, 92%);
 }
 
-/* Colors */
-/* - Dark cyan: hsl(158, 36%, 37%)
-- Cream: hsl(30, 38%, 92%)
-
-### Neutral
-
-- Very dark blue: hsl(212, 21%, 14%)
-- Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%) */
-
 /* Containers */
 .container {
   display: flex;
@@ -112,12 +102,29 @@ body {
   width: 100%;
   border-radius: 5px;
   padding-block: 13px;
+  transition: all 1s ease;
+}
+
+.product-information a:hover {
+  background: hsl(157, 48%, 17%);
+  transform: scale(1.05);
 }
 
 .product-information i {
   padding-right: 5px;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/* Media Queries */
 @media screen and (max-width: 670px) {
   .flex-container {
     width: 95%;
@@ -160,13 +167,4 @@ body {
   .flex-container {
     min-width: 270px;
   }
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
