@@ -135,6 +135,9 @@ body {
 }
 
 @media screen and (max-width: 590px) {
+  .container {
+    margin-top: 5vh;
+  }
   .flex-container {
     flex-direction: column;
     min-width: 400px;
